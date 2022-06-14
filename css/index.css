@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@500&display=swap');
 
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
 :root {
     /* Font-size */
     --size-h1: 64px;
     --size-h2: 28px;
     --size-h3: 20px;
     --size-p: 14px;
-    --size-a: 28px;
+    --size-a: 20px;
     --size-footer: 1.4rem;
 
     /* Font-family */
@@ -25,14 +27,15 @@
     --prymary: #000000;
     --secondary: #3eabab;    ;
     --division: #FF312E;
-
+    
+    /* Durration */
+    --animate-duration:1.5s;
 }
 
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
-    background-color: var(--base);
 }
 
 
@@ -40,13 +43,14 @@ body{
     max-width: 1200px;
     padding: 0 5%;
     margin: 0 auto;
+    background-image: linear-gradient(to bottom, #fce58d, #fde793, #fde899, #feea9e, #feeba4, #feecaa, #fdedaf, #fdeeb5, #fceebc, #faefc3, #f9efc9, #f7efd0);
 }
 img {
     width: 100%;
 }
 
 header{
-    padding: var(--spacing-xsamll) 0;
+    padding: var(--spacing-xsamll) 0 0;
     border-bottom: 4px groove var(--division);
     display: flex;
     align-items: center;
@@ -61,16 +65,27 @@ header nav ul {
     justify-content: flex-end;
     gap: var(--spacing-xsamll);
     padding-right: var(--spacing-xsamll);
-}
-
-ul {
     list-style-type: none;
 }
 
-a{
+header nav ul li a{
     font-family: var(--text-principal);
     font-size: var(--size-a);
+    text-decoration: none;
+    color: var(--prymary);
+    padding: 8px;
+    border: 2px solid transparent;
 }
+
+header nav ul li a.select{
+    color: var(--secondary);
+}
+
+header nav ul li a:hover{
+    border: 2px solid var(--prymary);
+    transition: border 0.5s;
+}
+
 main {
     padding-bottom: var(--spacing-samll);
 }
@@ -275,6 +290,16 @@ header h1{
 header nav ul{
     padding: 0%;
 }
+
+header nav ul li a{
+    padding: 0;
+    border: 0;  
+}
+
+header nav ul li a:hover{
+    border: 0;
+    transition: none;
+}
 .container__inicio{
     display: flex;
     flex-direction: column;
@@ -363,5 +388,13 @@ a{
     header nav ul{
         flex-wrap: wrap;
         justify-content: center;
+    }
+    header nav ul li a{
+        padding: 0;
+        border: 0;  
+    }
+    header nav ul li a:hover{
+        border: 0;
+        transition: none;
     }
 }
