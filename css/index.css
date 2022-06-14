@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@500&display=swap');
+
+:root {
+    /* Font-size */
+    --size-h1: 64px;
+    --size-h2: 28px;
+    --size-h3: 20px;
+    --size-p: 14px;
+    --size-a: 28px;
+    --size-footer: 1.4rem;
+
+    /* Font-family */
+    --text-logo: 'Kdam Thmor Pro';
+    --text-principal: 'Roboto Mono';
+
+    /* Spacing */
+    --spacing-large: 6rem;
+    --specing-medium: 2.4rem;
+    --spacing-samll: 2rem;
+    --spacing-xsamll: 1rem;
+    --spacing-xxsmall: 0.7rem;
+
+    /* Colors */
+    --base: #F7EFD0;
+    --prymary: #000000;
+    --secondary: #3eabab;    ;
+    --division: #FF312E;
+
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: var(--base);
+}
+
+
+body{
+    max-width: 1200px;
+    padding: 0 5%;
+    margin: 0 auto;
+}
+img {
+    width: 100%;
+}
+
+header{
+    padding: var(--spacing-xsamll) 0;
+    border-bottom: 4px groove var(--division);
+    display: flex;
+    align-items: center;
+}
+
+nav{
+    flex-grow: 1;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-xsamll);
+    padding-right: var(--spacing-xsamll);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    font-family: var(--text-principal);
+    font-size: var(--size-a);
+}
+main {
+    padding-bottom: var(--spacing-samll);
+}
+
+
+/* CONTAINER */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* BOX */
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-basis: 30%;
+    flex-shrink: 1;
+}
+
+.box__info {
+    padding: 0 var(--spacing-xxsmall);
+}
+ /* BOX INFO */
+ p{
+     font-family: var(--text-principal);
+     font-size: var(--size-p);
+     padding: var(--spacing-xxsmall) 0;
+ }
+
+h1{
+    font-family: var(--text-logo);
+    font-size: var(--size-h1);
+    padding-left: var(--specing-medium);
+}
+
+h2{
+    font-family: var(--text-principal);
+    font-size: var(--size-h2);
+    margin-bottom: var(--spacing-xxsmall);
+}
+h3{
+    font-family: var(--text-principal);
+    font-size: var(--size-h3);
+    color: var(--secondary);
+}
+
+footer {
+    text-align: center;
+    padding: 2px 5%;
+    margin: auto;
+    text-decoration: none;
+    border-top: 4px groove var(--division);
+ }
+
+ footer img {
+     width: 30px;
+     margin: 20px 20px 0px;
+ }
+
+ /* Page-INICIO */
+ .gallery{
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     grid-gap: var(--spacing-xsamll);
+     width: 50%;
+ }
+.gallery img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery img:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+ .gallery img:nth-child(2){
+     grid-column: span 4;
+     grid-row: span 2;
+ }
+ .gallery img:nth-child(3){
+     grid-row: span 3;
+ }
+ .gallery img:nth-child(4){
+     grid-column: span 3;
+ }
+ .gallery img:nth-child(5){
+     grid-column: span 3 ;
+ }
+.container__inicio{
+    display: flex;
+ }
+
+ .container__inicio article{
+    max-width: 50%;
+    padding: 2% 5%;
+}
+
+/* Page Contacto */
+.contact{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+.form{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+}
+.contact__img {
+    width: 50%;
+    display: flex;
+    align-content: stretch;
+}
+
+/* Page - Comidas */
+.food-title{
+    display: flex;
+    justify-content: center;
+    margin-bottom: var(--spacing-xsamll);
+}
+
+.food-text-primary{
+    margin: var(--spacing-xxsmall) var(--spacing-xsamll) 0;
+}
+
+.food-text-secondary{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: var(--spacing-samll) 0;
+}
+.food-text-secondary div{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    padding: 0 var(--spacing-xsamll);
+    width: 50%;
+}
+
+.food-img-secondary{
+    width: 50%;
+}
+
+/* Page - Galeria */
+
+.container__galery{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: var(--spacing-xsamll);
+    width: 100%;
+}
+
+.container__galery img {
+    width: 100%;
+    height: 100%;
+}
+
+.container__galery img:nth-child(1){
+    grid-column: span 5;
+}
+.container__galery img:nth-child(2){
+    grid-column: span 4;
+}
+.container__galery img:nth-child(3){
+    grid-column: span 3;
+}
+.container__galery img:nth-child(4){
+    grid-column: span 9;
+}
+.container__galery img:nth-child(5){
+    grid-column: span 3;
+}
+.container__galery img:nth-child(6){
+    grid-column: span 6;
+}
+.container__galery img:nth-child(7){
+    grid-column: span 6;
+}
+
+@media (max-width:768px) {
+header{
+    flex-direction: column;
+}
+header h1{
+    padding: 0%;
+}
+header nav ul{
+    padding: 0%;
+}
+.container__inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: var(--spacing-xsamll);
+    width: 80%;
+}
+.container__inicio article{
+
+    max-width: 80%;
+    padding: 5% 5%;
+}
+h1{
+    font-size: 48px;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 16px;
+}
+p{
+    font-size: 14px;
+}
+a{
+    font-size: 20px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    
+}
+.cards {
+    max-width: 80%;
+    padding: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    justify-content: center;
+}
+.contact{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    padding: var(--spacing-xsamll) 0;
+}
+/* Page -comida */
+
+.food-text-secondary{
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: var(--spacing-xxsmall) var(--spacing-xxsmall);
+}
+.food-text-secondary div{
+    width: 100%;
+    order: 2;
+    
+}
+.food-img-secondary{
+    width: 100%;
+    padding: var(--spacing-xxsmall) var(--spacing-xxsmall);
+}
+
+}
+
+@media (max-width: 1024px) {
+    header{
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    
+    h1{
+        padding: 0;
+    }
+    header nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
