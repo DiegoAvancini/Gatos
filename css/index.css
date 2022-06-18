@@ -8,6 +8,7 @@
     --size-h3: 20px;
     --size-p: 14px;
     --size-a: 28px;
+    --size-a-md: 18px;
     --size-footer: 1.4rem;
 
     /* Font-family */
@@ -47,67 +48,35 @@ img {
 }
 
 header{
-    padding: var(--spacing-xsamll) 0;
+    /* padding: var(--spacing-xsamll) 0; */
     border-bottom: 4px groove var(--division);
     display: flex;
-    align-items: center;
 }
 
-header nav ul {
-    /* display: flex; */
-    justify-content: flex-end;
-    flex-flow: row wrap;
-    gap: var(--spacing-xsamll);
-    padding-right: var(--spacing-xsamll);
-    width: 70%;
-}
-
-header nav ul li a{
+.nav-item{
     font-family: var(--text-principal);
     font-size: var(--size-a);
-    text-decoration: none;
     color: var(--prymary);
-    padding: 8px;
-    border: 2px solid transparent;
 }
 
-header nav ul li a.select{
+.nav-link:hover{
     color: var(--secondary);
-
 }
 
-header nav ul li a:hover{
-    border: 2px solid var(--prymary);
-    transition: border 0.5s;
+nav{
+    width: 997px;
+    display: flex; 
 }
 
-.logo{
-    max-width: 20%;
-}
-ul {
-    list-style-type: none;
-}
-
-a{
-    font-family: var(--text-principal);
-    font-size: var(--size-a);
-}
-
-.nav {
-    margin: 0;
-    align-items: flex-end;
-    display: flex;
-}
-header .row{
-}
 main {
-    padding-bottom: var(--spacing-samll);
+    margin: 0%;
+    padding: var(--spacing-xsamll) 0%;
+    max-width: 100%;
 }
 
-h1{
+.navbar-brand{
     font-family: var(--text-logo);
     font-size: var(--size-h1);
-    padding-left: var(--specing-medium);
 }
 
 h2{
@@ -138,19 +107,15 @@ footer {
 
 main section{
     display: flex;
-
+    align-items: center;
 }
 
 main section div{
+    width: 50%;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: var(--spacing-xsamll);
-    width: 50%;
-}
-main section div .grid{
-    max-width: 50%;
-    padding: 2% 5%;
     
 }
 
@@ -176,3 +141,62 @@ main section div img:nth-child(4){
 main section div img:nth-child(5){
      grid-column: span 3 ;
  }
+
+main section article{
+    width: 50%;
+    padding: 0 var(--spacing-samll);
+ }
+
+ /* CONTACTO */
+
+ main{
+    display: flex;
+    flex-direction: row;
+ }
+ main picture .img{
+    width: 100%;
+    /* max-width: 100%; */
+ }
+
+ main section .form{
+    width: 50%;
+ }
+
+ .card{
+    background-color: var(--base);
+    height: 100%;
+ }
+
+ /* Pagina - Razas */
+
+.col-sm-6{
+    padding-top: var(--spacing-xsamll);
+}
+@media (max-width: 768px) {
+
+.navbar-brand{
+    font-size: 52px;
+}
+
+
+main{
+    padding: var(--spacing-xxsmall) 0;
+}
+main section{
+    flex-direction: column;
+}
+
+.grid{
+    width: 90%;
+}
+
+main section article{
+    width: 90%;
+    padding: var(--spacing-xxsmall) var(--spacing-xxsmall) 0;
+}
+
+.nav-item{
+    font-size: var(--size-a-md);
+}
+
+}
