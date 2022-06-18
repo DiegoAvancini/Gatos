@@ -86,9 +86,6 @@ header nav ul li a:hover{
     transition: border 0.5s;
 }
 
-main {
-    padding-bottom: var(--spacing-samll);
-}
 
 
 /* CONTAINER */
