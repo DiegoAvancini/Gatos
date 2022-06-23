@@ -1,0 +1,23 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto+Mono:wght@500&display=swap');
+
+/* aimations */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+/*MISC*/
+@import "./misc/variables";
+@import "./misc/normalize";
+
+/* PARTIALS */
+
+@import "./partials/header";
+@import "./partials/footer";
+
+/* VIEWS */
+@import "../sass/views/inicio.scss";
+@import "../sass/views/comidas.scss";
+@import "../sass/views/contacto.scss";
+@import "../sass/views/galeria.scss";
+
+/* MISC */
+@import "./misc/breakpoints";

@@ -1,0 +1,30 @@
+/* HEADER */
+header{
+    display: flex;
+    align-items: stretch!important;
+    border-bottom: 4px groove $division;
+    padding: $spacing-xsmall 0 0;
+
+    nav ul li a{
+        justify-content: flex-end;
+        font-family: $text-principal;
+        font-size: $size-a;
+        text-decoration: none;
+        color: $prymary;
+
+        ul li a:hover{
+            transition: color 0.5s;
+            color: $secondary!important;
+        }
+    }
+
+    .selection{
+        color: $secondary!important;
+    }
+
+    .navbar-brand{
+        font-family: $text-logo;
+        font-size: $size-h1;
+        padding-left: $spacing-xxsmall;
+    }
+}

@@ -1,0 +1,22 @@
+/* Page - CONTACTO */
+
+.contact{
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: row nowrap;
+    
+}
+.form{
+    margin: 0%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+
+}
+.contact__img {
+    width: 50%;
+    display: flex;
+    align-content: stretch;
+}
