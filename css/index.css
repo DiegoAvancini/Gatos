@@ -155,7 +155,8 @@ footer {
   margin: 0 auto;
   margin-top: 2rem;
   display: flex;
-  flex-flow: row nowrap; }
+  flex-flow: row nowrap;
+  align-items: center; }
 
 .form {
   margin: 0%;
@@ -165,8 +166,7 @@ footer {
 
 .contact__img {
   width: 50%;
-  display: flex;
-  align-content: stretch; }
+  height: 100%; }
 
 /* Page - Galeria */
 .contenedor__galery {
