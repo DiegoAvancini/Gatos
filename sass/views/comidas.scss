@@ -1,7 +1,7 @@
 /* Page - COMIDAS */
 
 .food-title{
-    display: flex;
+    @include flex;
     justify-content: center;
     margin-bottom: $spacing-xsmall;
 }
@@ -11,12 +11,12 @@
 }
 
 .food-text-secondary{
-    display: flex;
+    @include flex;
     flex-flow: row nowrap;
     padding: $spacing-small 0;
     
     div{
-        display: flex;
+        @include flex;
         flex-flow: column nowrap;
         justify-content: center;
         padding: 0 $spacing-xsmall;

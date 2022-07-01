@@ -3,7 +3,7 @@ footer {
     padding: 2px 5%;
     margin: auto;
     text-decoration: none;
-    border-top: 4px groove $division;
+    border-top: 4px groove map-get($color, "division");
 
     img {
         width: 30px;

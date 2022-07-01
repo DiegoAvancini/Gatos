@@ -34,34 +34,6 @@ h2{
 h3{
    font-family: $text-principal;
    font-size: $size-h3;
-   color: $secondary;
-}
-
-/* contenedor */
-.contenedor {
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 2rem;
-}
-
-/* CARDS */
-.cards {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: center;
-}
-
-/* BOX */
-.box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    flex-basis: 30%;
-    flex-shrink: 1;
-
-    .box__info {
-        padding: 0 $spacing-xxsmall;
-    }
+   color: map-get($color, "secondary");
 }
 

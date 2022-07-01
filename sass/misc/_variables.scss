@@ -17,11 +17,13 @@ $spacing-small: 2rem;
 $spacing-xsmall: 1rem;
 $spacing-xxsmall: 0.7rem;
 
-/* Colors */
-$base: #F7EFD0;
-$prymary: #000000;
-$secondary: #3eabab;    ;
-$division: #FF312E;
+/* MAP - Colors */
+$color:(
+    "base":#F7EFD0,
+    "prymary":#000000,
+    "secondary": #3eabab,
+    "division": #FF312E,
+);
 
-/* Durration */
-$animate-duration:1.5s;
+/* Duration */
+$animate-duration: 1.5s;

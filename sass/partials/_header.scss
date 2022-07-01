@@ -1,8 +1,8 @@
 /* HEADER */
 header{
-    display: flex;
+    @include flex;
     align-items: stretch!important;
-    border-bottom: 4px groove $division;
+    border-bottom: 4px groove map-get($color, "division");
     padding: $spacing-xsmall 0 0;
 
     nav ul li a{
@@ -10,16 +10,16 @@ header{
         font-family: $text-principal;
         font-size: $size-a;
         text-decoration: none;
-        color: $prymary;
+        color: map-get($color, prymary);
 
         ul li a:hover{
             transition: color 0.5s;
-            color: $secondary!important;
+            color: map-get($color, "secondary")!important;
         }
     }
 
     .selection{
-        color: $secondary!important;
+        color: map-get($color, "secondary")!important;
     }
 
     .navbar-brand{
