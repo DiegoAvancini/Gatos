@@ -10,16 +10,21 @@
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
+    
 }
-
+.spacing-cards{
+    margin-bottom: $spacing-small;
+}
 .box {
     @include flex;
     flex-direction: column;
     gap: 1rem;
     flex-basis: 30%;
     flex-shrink: 1;
+    background-color: rgba(182, 182, 182, 0.5);
 
     .box__info {
         padding: 0 $spacing-xxsmall;
     }
+
 }
