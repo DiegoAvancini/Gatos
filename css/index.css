@@ -253,6 +253,8 @@ footer {
     flex-direction: column;
     gap: 0.7rem;
     justify-content: center; }
+  .spacing-cards {
+    margin-bottom: 0.7rem; }
   .contact {
     display: flex;
     flex-flow: column nowrap;
