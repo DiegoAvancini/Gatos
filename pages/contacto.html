@@ -32,7 +32,7 @@
                     <a class="nav-link" href="razas.html">RAZAS</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="comidas.html">ALIMENTOS</a>
+                    <a class="nav-link" href="alimentos.html">ALIMENTOS</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link  selection" href="contacto.html">CONTACTO</a>
@@ -44,20 +44,18 @@
             </div>
           </nav>
     </header>
-    <main class="contact">
-        <picture class="contact__img">
-            <img src="../images/gato-contacto.jpg" alt="Gato mirando al usuario">
-        </picture>
-        <section class="form">
+    <main class="container">
+        <section class="form rounded animate__animated animate__fadeIn animate__delay-1s">
             <form action="">
-                <label for="fname">Nombre</label><br>
-                <input type="text" name="fname" id="fname"><br>
-                <label for="lname">Apellido</label><br>
-                <input type="text" name="lname" id="lname"><br>
-                <label for="phone">Telefono</label><br>
-                <input type="tel" name="phone" id="phone"><br>
-                <label for="inquiry">Consulta</label><br>
-                <textarea name="inquiry" id="inquiry" cols="25" rows="5"></textarea><br><br>
+                <p>Dejanos tu consulta u aporte. Puedes suscribirte al Newsletter de Gatos y recibir  información sobre alimentacion, comidas y razas de gatos.</p>
+                <label for="fname" class="form-label">Nombre</label><br>
+                <input class="form-control form-control-sm" type="text" name="fname" id="fname"><br>
+                <label for="lname" class="form-label">Apellido</label><br>
+                <input class="form-control form-control-sm" type="text" name="lname" id="lname"><br>
+                <label  for="phone" class="form-label">Telefono</label><br>
+                <input class="form-control form-control-sm" type="tel" name="phone" id="phone"><br>
+                <label class="form-label" for="inquiry">Consulta</label><br>
+                <textarea class="form-control form-control-sm" name="inquiry" id="inquiry" cols="25" rows="5"></textarea><br>
                 <input type="radio" name="suscribe" id="suscribe">
                 <label for="suscribe">Suscribirse al Newsletter de GATOS</label><br><br>
                 <input type="submit" value="Enviar"><br><br>

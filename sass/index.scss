@@ -6,7 +6,6 @@
 
 /*MISC*/
 @import "./misc/mixins";
-@import "./misc/animations";
 @import "./misc/variables";
 @import "./misc/normalize";
 
@@ -17,7 +16,7 @@
 
 /* VIEWS */
 @import "../sass/views/inicio.scss";
-@import "../sass/views/comidas.scss";
+@import "../sass/views/alimentos.scss";
 @import "../sass/views/contacto.scss";
 @import "../sass/views/galeria.scss";
 @import "../sass/views/razas.scss";
