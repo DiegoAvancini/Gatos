@@ -6,7 +6,7 @@
 }
 
 .cards {
-    @include flex;
+    display: flex;
     flex-direction: row;
     gap: 1rem;
     justify-content: center;
@@ -16,12 +16,12 @@
     margin-bottom: $spacing-small;
 }
 .box {
-    @include flex;
+    display: flex;
     flex-direction: column;
     gap: 1rem;
     flex-basis: 30%;
     flex-shrink: 1;
-    background-color: rgba(182, 182, 182, 0.5);
+    background-color: $background-card;
 
     .box__info {
         padding: 0 $spacing-xxsmall;

@@ -34,7 +34,7 @@
     }
 }
 .contenedor__inicio{
-   @include flex;
+   display: flex;
 
     article{
         max-width: 50%;

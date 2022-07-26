@@ -1,6 +1,6 @@
 /* HEADER */
 header{
-    @include flex;
+    display: flex;
     align-items: stretch!important;
     border-bottom: 4px groove map-get($color, "division");
     padding: $spacing-xsmall 0 0;

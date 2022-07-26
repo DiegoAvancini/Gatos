@@ -1,22 +1,26 @@
 /* Page - COMIDAS */
 
+.background-food{
+    background-color: $background-card;
+}
+
 .food-title{
-    @include flex;
+    display: flex;
     justify-content: center;
     margin-bottom: $spacing-xsmall;
 }
 
 .food-text-primary{
-    margin: $spacing-xxsmall $spacing-xsmall 0;
+    margin: $spacing-xsmall $spacing-xsmall 0;
 }
 
 .food-text-secondary{
-    @include flex;
+    display: flex;
     flex-flow: row nowrap;
-    padding: $spacing-small 0;
+    padding: 0;
     
     div{
-        @include flex;
+        display: flex;
         flex-flow: column nowrap;
         justify-content: center;
         padding: 0 $spacing-xsmall;
@@ -24,7 +28,8 @@
     }
 }
 
+
 .food-img-secondary{
-    width: 50%;
+    width: 50%;   
 }
 
